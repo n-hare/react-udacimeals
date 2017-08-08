@@ -14,14 +14,11 @@ module.exports = {
     rules: [
       {
         // Watch all files that end in .js
-        test: /\.js?$/,
+        test: /\.js$/,
         // Unless it's in the node_modules directory
         exclude: /node_modules/,
         // And run it through the babel loader
-        loader: 'babel-loader',
-        query: {
-          presets:[ 'env', 'react', 'stage-3' ]
-        }
+        loader: 'babel-loader'
       },
       {
         test: /\.css$/,
