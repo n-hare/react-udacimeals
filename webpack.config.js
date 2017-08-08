@@ -18,7 +18,10 @@ module.exports = {
         // Unless it's in the node_modules directory
         exclude: /node_modules/,
         // And run it through the babel loader
-        loader: 'babel-loader'
+        loader: 'babel-loader',
+        query: {
+          presets:[ 'env', 'react', 'stage-3' ]
+        }
       },
       {
         test: /\.css$/,
